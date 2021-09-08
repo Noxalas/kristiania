@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuborg alkoholfri</title>
+</head>
+<body>
+    <h3>Bestill flasker</h3>
+    <p id="status-p"></p>
+    
+    <script>
+        const statusP = document.getElementById("status-p");
+
+        var itemCount = 100;
+        var value = true;
+        var userAmountPrompt; 
+        userAmountPrompt = window.prompt("Hvor mange flasker Tuborg vil du ha?");
+        
+        value = promptUser(itemCount, statusP);
+        
+        
+
+        function promptUser(count, tag) {
+            if (!isNaN(userAmountPrompt)) {
+                if (userAmountPrompt <= count) {
+                    tag.innerHTML = `Ordre bekreftet. ${userAmountPrompt} flasker skal sendes.`;
+                    return true;
+                } else {
+                    window.alert(`Ønsket antall: ${userAmountPrompt}.\nAntall på lager: ${itemCount}\nIkke nok flasker på lager.`)
+                    return false;
+            }
+            } else {
+                window.alert("Skriv inn et antall!");
+                return false;
+            }
+        }
+
+        if (!value) {
+            location.reload();
+        }
+    </script>
+</body>
+</html>

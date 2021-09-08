@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "5961c326d275cd2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "324d4f67c49d3ab3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1. Projects/Trello Game Design Exam/POLY/POLYGON.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4afc6dd10ca9a669",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e8cd87d53706113",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2298a9bcbc1de139",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7e526e4d3fd9671f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "66e6cb484ac3267a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b24349f742bc5f5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dfda80064a77f645",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. Projects/Trello Game Design Exam/POLY/POLYGON.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "324d4f67c49d3ab3",
+  "lastOpenFiles": [
+    "1. Projects/Trello Game Design Exam/POLY/POLYGON.md",
+    "1. Projects/Trello Game Design Exam/Trello Game Design Exam.md",
+    "Pinterest.md",
+    "1. Projects/Trello Game Design Exam/POLY/POLY_CenterPiece.md",
+    "1. Projects/Trello Game Design Exam/POLY/POLY_Interior.md",
+    "1. Projects/Trello Game Design Exam/POLY/POLY_Exterior.md",
+    "1. Projects/Trello Game Design Exam/POLYGON.md",
+    "1. Projects/Trello Game Design Exam/POLY_Interior.md",
+    "CenterPiece.md",
+    "Interior.md"
+  ]
+}

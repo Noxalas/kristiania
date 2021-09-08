@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 - Bank</title>
+</head>
+<body>
+    <h1>Bank</h1>
+    <p id="bank-status"></p>
+
+    <script>
+        const statusP = document.getElementById("bank-status");
+        
+        var secretPass = "Password123";
+        var moneyAmount = 69420.00;
+
+        var attemptCount = 3;
+
+        checkCredentials();
+
+        if (attemptCount <= 0) {
+            statusP.innerHTML = "Alle forsøk brukt opp. Kontakt kundestøtte."
+        }
+
+        function checkCredentials() 
+        {
+            var userInput = window.prompt("Passord :");
+
+            if (userInput == secretPass) {
+                statusP.innerHTML = `Din saldo er : ${moneyAmount}`;
+
+            } else {
+                attemptCount--;
+
+                if (attemptCount > 0) {
+                    window.alert(`Feil passord. ${attemptCount} forsøk igjen.`);
+                    checkCredentials();
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

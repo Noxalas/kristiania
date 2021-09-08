@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging</title>
+</head>
+<body>
+    <h1>Butikk - Debugging</h1>
+    <p id="output-p">Navn: </p>
+    
+    <script>
+        const outputParag = document.getElementById("output-p"); /* Permanent reference til <p> tagen */
+        
+        var userPromptName = window.prompt("Navn:"); /* Få tak i input fra brukeren */
+        var userPromptLastName = window.prompt("Etternavn:");
+
+        outputParag.innerHTML = "Navn: " + userPromptName + "<br>" + "Etternavn: " + userPromptLastName; /* Skriv ut inputen til <p> tagen */
+    </script>
+    
+</body>
+</html>

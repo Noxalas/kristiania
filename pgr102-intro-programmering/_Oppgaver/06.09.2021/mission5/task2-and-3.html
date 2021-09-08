@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 &amp; 3 - Guess the number!</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var secretNumber = getRandomInt(10);
+
+        var userInput = window.prompt("Hva er det hemmelige tallet?");
+
+        if (parseInt(userInput) === secretNumber) 
+        {
+            window.alert("Riktig!");
+        } 
+        else 
+        {
+            if (parseInt(userInput) > secretNumber) 
+            {
+                window.alert("Pssst... Tallet er høyere...");
+            } 
+            else if (parseInt(userInput) < secretNumber) 
+            {
+                window.alert("Pssst... Tallet er lavere...");
+            } 
+            else 
+            {
+                window.alert("Tallet er feil!");
+            }
+
+            location.reload();
+        }
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+    </script>    
+</body>
+</html>

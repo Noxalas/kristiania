@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!--
+    Oppgaver 
+    ----------------------------
+    [x] Lag html fil
+    [x] Lag css fil
+    [x] Lag heading
+    [x] Lag paragraf
+    [x] Lag css regel til body
+    [x] Lag css regel til paragraf
+
+    Ekstra
+    ----------------------------
+    [?] Lag rom inne i elementet
+    [x] Lag rom utenfor elementet
+    [] Overstyr elementet med internal stiling
+    [] Overstyr elementet med inline stiling
+    [] Overstyr med !important i ekstern fil
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="kosetid2.css"/>
+    <style> 
+        h1 {
+            color: red; /*Internal override*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Dette er en heading</h1>
+    <h2>Dette er en 2heading</h2>
+    <p>Dette er et paragraf. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+        Saepe, alias dolor reprehenderit accusamus illum et odio non dolores perspiciatis sunt?</p>
+    <p style="color:purple;">En til paragraf, men denne blir overskrevet av en inline styling.</p>
+</body>
+</html>

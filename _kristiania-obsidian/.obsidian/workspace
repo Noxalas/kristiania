@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "4. Archives/ArchivesReadMe.md",
+            "file": "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Archives/ArchivesReadMe.md",
+                "file": "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "324d4f67c49d3ab3",
   "lastOpenFiles": [
+    "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
+    "1. Projects/Kristiania/CreativeWebproject/Session3/session3-html-css.md",
+    "1. Projects/Kristiania/CreativeWebproject/session3-html-css.md",
+    "1. Projects/Kristiania/CreativeWebproject/Untitled.md",
+    "1. Projects/Kristiania/CreativeWebproject/Session3.md",
+    "Untitled.md",
+    "2. Areas/Programming/HTML/Untitled.md",
     "4. Archives/ArchivesReadMe.md",
     "3. Resources/ResourcesReadMe.md",
-    "2. Areas/AreasReadMe.md",
-    "1. Projects/ProjectsReadMe.md",
-    "1. Projects/Untitled.md",
-    "4. Archives/Untitled.md",
-    "3. Resources/Untitled.md",
-    "2. Areas/AreasReadME.md",
-    "2. Areas/Untitled.md",
-    "Untitled.md"
+    "2. Areas/AreasReadMe.md"
   ]
 }

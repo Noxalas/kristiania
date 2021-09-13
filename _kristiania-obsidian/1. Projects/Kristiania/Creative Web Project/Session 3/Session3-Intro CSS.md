@@ -1,4 +1,4 @@
-#Scripting 
+#Scripting #CSS #HTML 
 
 Introduksjon til #CSS 
 ===============
@@ -7,17 +7,18 @@ For å løse oppgavene må du laste ned tilhørende kodebase som er lagt ut på 
 
 **Før du begynner:** 
 
-1. Last ned å pakk ut zip-filen.
+- Last ned å pakk ut zip-filen.
 
-2. Åpne mappen som du har pakket ut i VS Code.
+- Åpne mappen som du har pakket ut i VS Code.
 
-3. Opprett en ny CSS - fil og link til den i index.html. (Hvis du er usikker på hvordan gir slidene deg svaret.)
+- Opprett en ny CSS - fil og link til den i index.html. (Hvis du er usikker på hvordan gir slidene deg svaret.)
 
-4. **Valgfritt (men veldig lurt):** Se over index.html og dann deg et bilde av HTMLkoden. 
+- **Valgfritt (men veldig lurt):** Se over index.html og dann deg et bilde av HTMLkoden. 
 
-Da er du klar! Lykke til!
+Da er du klar! Lykke til! 
 
-# Oppgaver
+Oppgaver
+-----------
 
 Begynn å skrive i style.css dokumentet. Hvis du er usikker på hvilke CSS-regler du skal bruke, kan det være lurt å se i slidene til forelesningen eller i listen nederst i dette dokumentet. Hvis du har index.html åpen i Live Server, vil du også se endringene underveis. 
 

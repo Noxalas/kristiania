@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "324d4f67c49d3ab3",
+        "id": "7eec9391553051a4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
+            "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
             "mode": "source"
           }
         }
@@ -47,28 +47,14 @@
                 "sortOrder": "alphabetical"
               }
             }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300
-  },
-  "right": {
-    "id": "66e6cb484ac3267a",
-    "type": "split",
-    "children": [
-      {
-        "id": "b24349f742bc5f5c",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "dfda80064a77f645",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
+                "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,20 +69,27 @@
       }
     ],
     "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "66e6cb484ac3267a",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "324d4f67c49d3ab3",
+  "active": "7eec9391553051a4",
   "lastOpenFiles": [
-    "1. Projects/Kristiania/CreativeWebproject/Session3/session3-intro-css.md",
-    "1. Projects/Kristiania/CreativeWebproject/Session3/session3-html-css.md",
-    "1. Projects/Kristiania/CreativeWebproject/session3-html-css.md",
-    "1. Projects/Kristiania/CreativeWebproject/Untitled.md",
-    "1. Projects/Kristiania/CreativeWebproject/Session3.md",
-    "Untitled.md",
-    "2. Areas/Programming/HTML/Untitled.md",
-    "4. Archives/ArchivesReadMe.md",
-    "3. Resources/ResourcesReadMe.md",
-    "2. Areas/AreasReadMe.md"
+    "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
+    "1. Projects/R1-Matte Eksamen/1-Algebra/Mål Algebra.md",
+    "1. Projects/Kristiania/Creative Web Project/Session 3/Session3-HTML & CSS.md",
+    "1. Projects/Kristiania/Creative Web Project/Session 3/Session3-Intro CSS.md",
+    "1. Projects/Kristiania/Creative Web Project/Session 3/PRO105-Session 3.md",
+    "1. Projects/R1-Matte Eksamen/1-Algebra/Mål.md",
+    "3. Resources/Math/R1 Math Videos.md",
+    "1. Projects/R1-Matte Eksamen/1-Algebra/1 - Algebra.md",
+    "1. Projects/R1-Matte Eksamen/Math Exam.md",
+    "Algebra.md"
   ]
 }

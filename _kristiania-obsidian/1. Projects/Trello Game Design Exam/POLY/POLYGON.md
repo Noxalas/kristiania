@@ -11,7 +11,6 @@ Disse oppgavene handler om å bli kjent med #Unity og å venne seg til å bruke 
 
 Alle oppgavene kan fint løses i samme #Unity scene.
 
-
 BONUS
 --------
 

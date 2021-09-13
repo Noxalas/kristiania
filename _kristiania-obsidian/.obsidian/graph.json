@@ -3,20 +3,35 @@
   "search": "",
   "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#Unity",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:\"1. Projects/Kristiania\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0.4,
-  "nodeSizeMultiplier": 1.06324786324786,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1.4019828977761053,
-  "close": false
+  "nodeSizeMultiplier": 1.1185393258427,
+  "lineSizeMultiplier": 1.86179775280899,
+  "collapse-forces": true,
+  "centerStrength": 0.50561797752809,
+  "repelStrength": 9.43820224719101,
+  "linkStrength": 0.876404494382023,
+  "linkDistance": 196,
+  "scale": 0.713275462622449,
+  "close": true
 }

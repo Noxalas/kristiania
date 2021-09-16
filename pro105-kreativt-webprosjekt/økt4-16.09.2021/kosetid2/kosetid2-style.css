@@ -1,0 +1,16 @@
+p.question {
+    color: white;
+    background-color: blue;
+}
+
+div.question {
+    background-color: red;
+}
+
+div.question + div {
+    background-color: blueviolet;
+}
+
+div.question:nth-child(odd) {
+    background-color: grey;
+}

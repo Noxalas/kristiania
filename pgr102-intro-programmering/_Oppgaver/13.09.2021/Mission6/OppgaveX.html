@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra Click Maniac</title>
+</head>
+<body>
+    
+<h1>Ultra Click Maniac</h1>
+<hr>
+<p id="total-click-p">Total Clicks: 0</p>
+<p id="total-cps-p">CPS: 0</p>
+<input type="button" id="click-btn" value="Click" onclick="addClick()">
+<hr>
+<h3>Shop</h3>
+<ul>
+    <li>
+        <h4>Click Upgrade</h4>
+        <p>Price: 10</p>
+        <input type="button" value="Purchase" onclick="purchaseUpgrade( this )" data-upgrade-type="click-upgrade">
+    </li>
+    <li>
+        <h4>Maniac</h4>
+        <p>Price: 15</p>
+        <input type="button" value="Purchase" onclick="purchaseUpgrade( this )" data-upgrade-type="maniac-upgrade">
+    </li>
+    <li>
+        <h4>Crazy Clicker</h4>
+        <p>Price: 20</p>
+        <input type="button" value="Purchase" onclick="purchaseUpgrade( this )" data-upgrade-type="crazy-upgrade">
+    </li>
+</ul>
+<hr>
+<input type="button" value="Save" onclick="save()">
+<input type="button" value="Load" onclick="load()">
+
+
+<script>
+    const totalP = document.getElementById("total-click-p");
+    const totalCPSP = document.getElementById("total-cps-p");
+
+    var Game = {};
+
+    Game.Launch=function() {
+
+        Game.Init=function() {
+            Game.clicksTotal = 0;
+            Game.clicks = 0;
+            Game.CPS = 0;
+            
+        }
+    }
+
+    var clicks = 0;
+    var CPS = 0.0;
+    var currentCPS = 0;
+
+    var clickPrice = 10;
+    var maniacPrice = 15;
+    var crazyPrice = 20;
+
+    var clickerCPS = 0.1;
+    var maniacCPS = 0.5;
+    var crazyCPS = 10.0;
+
+    var clickers = 0;
+    var maniacs = 0;
+    var crazies = 0;
+
+    startup();
+
+    setInterval(updateTitle, 4000);
+    setInterval(update, 1000);
+
+    function startup() {
+        load();
+        
+        updateInfo();
+    }
+
+    function update() {
+
+        currentCPS += CPS;
+
+        while (currentCPS >= 1) {
+            clicks += 1;
+            currentCPS -= 1;
+        }
+
+        updateInfo();
+    }
+
+    function updateTitle() {
+        document.title = `${clicks} clicks.`;
+    }
+
+    function addClick() {        
+        clicks += 1;
+        updateInfo();
+    }
+
+    function updateInfo() {
+        CPS = Math.round(CPS * 10) / 10;
+
+        totalP.innerHTML = `Total Clicks: ${clicks}`;
+        totalCPSP.innerHTML = `CPS: ${CPS}`;
+    }
+
+    function purchaseUpgrade( el ) {
+        const elParent = el.parentElement;
+        var priceP = elParent.querySelector(`p`);
+        var upgradeType = el.getAttribute(`data-upgrade-type`);
+
+
+        switch(upgradeType){
+            case "click-upgrade":
+                updatePrice(1.2, upgradeType, clickPrice, clickerCPS, priceP);
+                break;
+            case "maniac-upgrade":
+                updatePrice(1.5, upgradeType, maniacPrice, maniacCPS, priceP);
+                break;
+            case "crazy-upgrade":
+                updatePrice(1.8, upgradeType, crazyPrice, crazyCPS, priceP);
+                break;
+            }
+        
+        }
+    
+    function updatePrice( incr, upgrade, upgradePrice, clickps, p ) {
+        if (clicks >= upgradePrice) {
+            var price = 0;
+
+            CPS += clickps;
+            
+            switch(upgrade) {
+                case "click-upgrade":
+                    clicks -= clickPrice;
+                    clickPrice *= incr;
+
+                    price = clickPrice;
+                    break;
+                case "maniac-upgrade":
+                    clicks -= maniacPrice;
+                    maniacPrice *= incr;
+
+                    price = maniacPrice;
+                    break;
+                case "crazy-upgrade":
+                    clicks -= crazyPrice;
+                    crazyPrice *= incr;
+
+                    price = crazyPrice;
+                    break;
+            }
+
+            console.log(`Price increased to: ${price}`);
+            
+            clickPrice = Math.round(clickPrice);
+            maniacPrice = Math.round(maniacPrice);
+            crazyPrice = Math.round(crazyPrice);
+            
+            p.innerHTML = `Price: ${price}`;
+            
+            updateInfo();
+            
+        } else {
+            console.debug("Not enough clicks.")
+        }
+    }
+
+
+    // SAVE & LOAD
+
+    function save() {
+        var str = "";
+
+        
+        var now = new Date();
+        now.setFullYear(now.getFullYear()+5);
+        
+        
+        // Game info
+        str += `|`+ 
+        parseInt(clicks)+`;` 
+        +`|`;
+        
+        str=`ClickerGame=`+escape(str)+`; expires=`+now.toUTCString()+`;`;
+        document.cookie = str;
+
+        console.log(str);
+
+        if (document.cookie.indexOf(`ClickerGame`)<0) console.log("Error");
+        else console.log("Game saved.");
+    }
+
+    function load() {
+        var str = ``;
+
+        if (document.cookie.indexOf('ClickerGame')>=0) str=unescape(document.cookie.split('ClickerGame=')[1]);
+
+
+        if (str!=``) {
+            var oldstr = str.split(`|`);
+            console.log(oldstr);
+            clicks = parseInt(oldstr[1].split(`;`)[0]);
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+Dette er en litt større oppgave, dvs. som krever flere kodelinjer, som er ment å løses etter at man har lært om variabler, funksjoner, template literal, document.getElementById() og onclick.

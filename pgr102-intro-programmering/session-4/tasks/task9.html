@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9</title>
+</head>
+<body>
+    
+    <h1>Quic Mafs: Electric Boogaloo (Now featuring retries!)</h1>
+
+    <p id="answer-p"></p>
+
+    <script>
+        const answerP = document.getElementById("answer-p");
+
+        var number1 = getRandomInt(10);
+        var number2 = getRandomInt(10);
+        var operator = getRandomOperator();
+
+        var answer = Number(getAnswer());
+
+        var hasAnsweredRight = false;
+
+
+        while(!hasAnsweredRight){
+            var userInput = Number(window.prompt(`What is: ${number1} ${operator} ${number2}`));
+            
+            if(userInput === answer) {
+                answerP.innerHTML = `${userInput} var helt riktig! Bra jobbet. :>`;
+                hasAnsweredRight = true;
+            } else {
+                window.alert("Dette var desverre feil. :< Prøv igjen!");
+            }
+
+        }
+
+        // if(Number(userInput) === answer) {
+        //     answerP.innerHTML = `${userInput} var helt riktig! Bra jobbet. :>`;
+        // } else {
+        //     answerP.innerHTML = `Dette var desverre feil. :<`;
+        // }
+        
+        function getAnswer() {
+            switch(operator) {
+                case "+":
+                    return addNumbers(number1, number2);
+                    break;
+                case "-":
+                    return subtractNumbers(number1, number2);
+                    break;
+                case "*":
+                    return multiplyNumbers(number1, number2);
+                    break;
+                case "/":
+                    return divideNumbers(number1, number2);
+                    break;
+                case _default:
+                    console.debug("Error...");
+            }
+        }
+
+
+        function getRandomOperator() {
+            var operator = ``;
+
+            var rand = getRandomInt(4);
+
+            switch(rand) {
+                case 0:
+                    operator = `+`;
+                    break;
+                case 1:
+                    operator = `-`;
+                    break;
+                case 2:
+                    operator = `*`;
+                    break;
+                case 3:
+                    operator = `/`;
+                    break;
+            }
+
+            return operator;
+        }
+
+
+        function addNumbers(a, b) {
+            return a+b;
+        }
+
+
+        function subtractNumbers(a, b) {
+            return a-b;
+        }
+
+
+        function multiplyNumbers(a, b) {
+            return a*b;
+        }
+
+
+        function divideNumbers(a, b) {
+            return a/b;
+        }
+
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+
+    </script>
+
+</body>
+</html>

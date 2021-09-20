@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+</head>
+<body>
+    <p id="output-p"></p>
+
+    <script>
+        const outputP = document.getElementById("output-p");
+
+        for(i = 0; i < 100; i++) {
+            var currentNum = i;
+
+            if(i > 30 && i < 70) {
+                currentNum = `<strong>${currentNum}<strong>`;
+            }
+
+            outputP.innerHTML += `${currentNum} `;
+
+        }
+
+
+    </script>
+</body>
+</html>

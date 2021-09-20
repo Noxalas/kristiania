@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="show-story-btn" type="button" value="Vis meg en morsom historie">
+    <p id=output-story-p>Her skal en morsom historie vises.</p>
+
+    <script>
+        const showStoryBtn = document.getElementById("show-story-btn");
+        const outputStoryP = document.getElementById("output-story-p");
+
+        function showStory() {
+            var story = "This is a story. About a guy in a blue world. Everything was blue for him. Da ba dee da ba daa.";
+
+            outputStoryP.innerHTML = `${story}`;
+        }
+
+        showStoryBtn.onclick = showStory;
+    </script>
+
+</body>
+</html>

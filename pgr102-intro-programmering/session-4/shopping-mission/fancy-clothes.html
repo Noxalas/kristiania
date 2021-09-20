@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FancyClothes</title>
+    <link rel="stylesheet" type="text/css" href="css/fancy-clothes.css">
+</head>
+<body>
+   
+    <div id="container">
+
+        <header id="main-page-header">
+            <h1>FancyClothes</h1>
+        </header><!-- end mainPageHeader -->
+
+        <main id="main-content">            
+            
+            <section id="products-section">
+               <article>
+                    <h3>Borbon</h3>
+                    <img src="images/borbon.jpg">
+                    <p>Pris: 1200,-NOK</p>
+                    <input id="buy-borbon-btn" type="button" value="Buy" onclick="purchaseItem(this)">
+                </article>    
+                <article>
+                    <h3>Emerald</h3>
+                    <img src="images/emerald.jpg">
+                    <p>Pris: 800,-NOK</p>
+                    <input id="buy-emerald-btn" type="button" value="Buy" onclick="purchaseItem(this)">
+                </article> 
+                <article>
+                    <h3>Pink dreams</h3>
+                    <img src="images/pink-dreams.jpg">
+                    <p>Pris: 2000,-NOK</p>
+                    <input id="buy-pink-dreams-btn" type="button" value="Buy" onclick="purchaseItem(this)">
+                </article>  
+            </section>
+            
+            <section id="shopping-summary-section">                
+                <header>
+                    <h3>Shopping summary</h3>
+                </header>
+                <div id="shopping-summary-div">
+                    <p>Number of Borbon bought: 0</p>
+                    <p>Number of Emerald bought: 0</p>
+                    <p>Number of Pink Dreams bought: 0</p>
+                    <p>Total: 0,- NOK</p>
+                </div>
+            </section>
+            
+        </main><!-- end main-content -->
+
+    </div><!-- end container -->
+       
+    <script>
+        const summaryDiv = document.getElementById("shopping-summary-div");
+
+        const summaryPList = summaryDiv.querySelectorAll('p');
+
+        console.debug(summaryDiv.querySelectorAll('p'));
+
+        
+
+
+        var totalPrice = 0;
+
+        var totalAmounts = [0, 0, 0];
+
+        function purchaseItem(el) {
+            const elParent = el.parentElement;
+
+            var priceP = elParent.querySelector("p").innerHTML;
+
+            switch(el.id) {
+                case "buy-borbon-btn":
+                    var price = priceP.split(" ")[1].split(",")[0];
+                    updateInfo
+                    break;
+                case "buy-emerald-btn":
+                    //do stuff
+                    break;
+                case "buy-pink-dreams-btn":
+                    //do stuff
+                    break;
+            }
+        }
+        
+
+        function updateInfo() {
+            console.debug("lel");
+            for(i=0; i<summaryPList.length; i++) {
+                if (i < (summaryPList.length - 1)) {
+                    var price = document.getElementById("buy-borbon-btn").parentElement.querySelector('p').innerHTML.split(" ")[1].split(",")[0];
+
+                    console.debug(`Price changed to ${price}`);
+                }
+                console.debug("lel");
+            }
+        }
+    </script>
+
+</body>
+</html>

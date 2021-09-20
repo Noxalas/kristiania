@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
+            "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "758f4ca328c60682"
+      },
+      {
+        "id": "4b90af689ff562a0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
+            "mode": "preview"
+          }
+        },
+        "group": "758f4ca328c60682"
       }
     ],
     "direction": "vertical"
@@ -54,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
+                "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -81,15 +94,15 @@
   },
   "active": "7eec9391553051a4",
   "lastOpenFiles": [
-    "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
-    "1. Projects/R1-Matte Eksamen/1-Algebra/Mål Algebra.md",
-    "1. Projects/Kristiania/Creative Web Project/Session 3/Session3-HTML & CSS.md",
-    "1. Projects/Kristiania/Creative Web Project/Session 3/Session3-Intro CSS.md",
-    "1. Projects/Kristiania/Creative Web Project/Session 3/PRO105-Session 3.md",
-    "1. Projects/R1-Matte Eksamen/1-Algebra/Mål.md",
-    "3. Resources/Math/R1 Math Videos.md",
-    "1. Projects/R1-Matte Eksamen/1-Algebra/1 - Algebra.md",
-    "1. Projects/R1-Matte Eksamen/Math Exam.md",
-    "Algebra.md"
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/Oppgaver/PGR102.session(4) - Loops-bool-Math.random().md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/Task Images/clip_image002.jpg",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/Session3-Intro CSS.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/Session3-HTML & CSS.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/PRO105-Session 3.md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/S3K1 - If-Else.md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/S3K2 - Function.md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/PGR102.session(3).md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/Oppgaver/PGR102.session(3) - Function-Event.md"
   ]
 }

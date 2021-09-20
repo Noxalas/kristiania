@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skapelsesmaskin</title>
+    <!-- 
+        En nettside som kan skape ting
+    -->
+</head>
+<body>
+
+<input id="add-image-btn" type="button" value="Legg til katt">
+
+<div id="output-image-div">
+    <img src>
+</div>
+
+<script>
+
+    var addImageBtn = document.getElementById("add-image-btn");
+    var outputDiv = document.getElementById("output-image-div");
+
+
+    function addRandomImage() {
+        var filesList = ["cat.jpg", "apple.jpg", "cookie.jpg", "fem-hundre-kroner.png"];
+        var randomNumber = getRandomNumber(4);
+
+        var image = `images/${filesList[randomNumber]}`;
+
+        outputDiv.innerHTML += `
+        <img src=${image} />
+        `;
+    }
+
+    // VIKTIG: Aldri bruk () på funksjoner her. Gjør det bare om du skal ha en return funksjon.
+    addImageBtn.onclick = addRandomImage;
+
+    function getRandomNumber(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+</script>
+
+</body>
+</html>

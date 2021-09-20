@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else</title>
+</head>
+<body>
+    
+    <script>
+
+        // Vi tenker oss at verdiene lagt inn i variablene kom fra bruker
+        var numberOfPizzas = 7;
+        var menu = "vegetarian"; // meat, vegetarian eller dessert
+        
+        // Eksempel 1 - Å sjekke om flere enn 5 pizzaer blir bestilt, og gi rabatt.
+        if( numberOfPizzas > 5 ){
+            // gi bruker rabatt
+        }else{
+            // gi bruker vanlig pris
+        }
+
+        // Eksempel 2 - Et sjekk som skal vise en annen meny i forhold til {menu} variabelen.
+        if( menu === "vegetarian" ){
+            // vis vegetarmeny
+        }else if( menu === "meat" ){
+            // vis kjøttmeny
+        }else{
+            // vis dessertmeny
+        }
+
+        // Eksempel 3 - Et sjekk som skal sjekke om bruker velger vegetar meny, og gi rabatt om 5 eller flere pizzaer er bestilt.
+        if( menu === "vegetarian" ){
+
+            if( numberOfPizzas >= 5 ){
+                // gi rabatt
+            }
+
+        }else if( menu === "dessert"){
+
+        }
+
+        // Eksempel 4 - Helt likt sjekk som eksempel 3, men med "meat" meny lagt til som en OR.
+        if( menu === "vegetarian" || menu === "meat"){
+
+            if( numberOfPizzas >= 5 ){
+                // gi rabatt
+            }
+
+        }else if( menu === "dessert"){
+
+        }
+
+    </script>
+</body>
+</html>

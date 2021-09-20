@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro while</title>
+    <!--
+        Intro til while
+
+        Bruker blir spurt med prompt om ting brukeren ønsker   
+        - utskrift til en liste (ul) på nettsiden med hva brukeren ønsker seg
+        - variabel med boolean som betingelse for å stoppe løkken
+        - if for å sjekke om bruker ønsker mer av noe eller ikke        
+    -->
+</head>
+<body>
+    <h3>Skriv navn på ting som du kommer på</h3>
+    <div id="output-div"></div>
+    
+    <script>
+        var outputDiv = document.getElementById("output-div");
+
+        var shouldContinue = true;
+
+        while( shouldContinue ) {
+            var userWord = window.prompt("Skriv inn et ord");
+
+            if ( userWord === "" || userWord === null ) {
+                shouldContinue = false;
+                break;
+            }
+
+            outputDiv.innerHTML += `<p>${userWord}</p>`;
+        }
+    </script>
+</body>
+</html>

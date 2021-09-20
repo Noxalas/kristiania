@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Press da button</title>
+</head>
+<body>
+        
+<h1>How many times can you press da button.</h1>
+<input id="incr-button" type="button" value="Da button">
+<p id="total-p">Total Amount : 0</p>
+
+
+<script>
+    const incrButton = document.getElementById("incr-button");
+    const totalP = document.getElementById("total-p");
+
+    var total = 0;
+
+    function incrTotal() {
+        total++;
+
+        totalP.innerHTML = `Total Amount : ${total}`;
+    }
+
+    incrButton.onclick = incrTotal;
+</script>
+
+</body>
+</html>

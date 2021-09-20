@@ -22,15 +22,15 @@ Oppgaver
 
 Begynn å skrive i style.css dokumentet. Hvis du er usikker på hvilke CSS-regler du skal bruke, kan det være lurt å se i slidene til forelesningen eller i listen nederst i dette dokumentet. Hvis du har index.html åpen i Live Server, vil du også se endringene underveis. 
 
-1. Bodyelementet (<body></body>) skal ha bakgrunnsfargen lightgray
+1. Bodyelementet (body) skal ha bakgrunnsfargen lightgray
 
-2. Headerelementet (<header></header>) skal ha bakgrunnsfargen midnightblue
+2. Headerelementet (header) skal ha bakgrunnsfargen midnightblue
 
-3. Mellomtitlene (<h2></h2>) skal være 30px store og ha fargen lightblue;
+3. Mellomtitlene (h2) skal være 30px store og ha fargen lightblue;
 
-4. Hovedtittelen (<h1></h1>) skal være 50px stor, være sentrert og ha fargen ghostwhite
+4. Hovedtittelen (h1) skal være 50px stor, være sentrert og ha fargen ghostwhite
 
-5. Alle titler (<h1></h1> og <h2></h2>) skal være i skrifttypen sans-serif og være satt i bold.
+5. Alle titler (h1 og h2) skal være i skrifttypen sans-serif og være satt i bold.
 
 6. Mainelementet skal ha en hvit bakgrunnsfarge. 
 
@@ -50,7 +50,7 @@ Begynn å skrive i style.css dokumentet. Hvis du er usikker på hvilke CSS-regle
 
 **Nesten ferdig! Det siste som gjenstår er å:**
 
-Validere koden din! [[CSSValidator]](https://jigsaw.w3.org/css-validator/)
+Validere koden din! [CSSValidator](https://jigsaw.w3.org/css-validator/)
 
 **Ekstra øving:** 
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cities in Europe</title>
+</head>
+<body>
+    <h1>Which cities do you remember in Europe?</h1>
+    <input id="add-city-btn" type="button" value="Add city"/>
+    <ul id="city-ul"></ul>
+
+    <script>
+        const addCityBtn = document.getElementById("add-city-btn");
+        const cityUl = document.getElementById("city-ul");
+
+        function addCity() {
+            var userInput = window.prompt("Type in the name of the city below:");
+
+            cityUl.innerHTML += `<li>${userInput}</li>`;
+        }
+
+        addCityBtn.onclick = addCity;
+
+    </script>
+</body>
+</html>

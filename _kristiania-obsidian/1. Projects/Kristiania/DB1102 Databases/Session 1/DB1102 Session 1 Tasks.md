@@ -1,3 +1,12 @@
+#DB1102 #Scripting #SQL
+
+DB1102 Session 1 Tasks
+=================
+--------------------------------------
+
+```sql
+USE world;
+
 -- 1
 SELECT * FROM city;
 
@@ -35,3 +44,5 @@ SELECT Count(Language) FROM countrylanguage;
 
 -- EXTRA
 SELECT Name, Population, LifeExpectancy FROM country WHERE Continent = 'Europe' ORDER BY LifeExpectancy ASC;
+
+```

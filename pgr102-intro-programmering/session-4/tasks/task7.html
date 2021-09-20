@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7</title>
+</head>
+<body>
+    
+    <ul id="output-ul"></ul>
+
+    <script>
+        const outputUl = document.getElementById("output-ul");
+
+        var userInput = parseInt(window.prompt("How many list items do you want?"));
+
+        for(i = 0; i < userInput; i++) {
+            outputUl.innerHTML += `<li>${i+1}</li>`;
+        }
+
+    </script>
+
+
+</body>
+</html>

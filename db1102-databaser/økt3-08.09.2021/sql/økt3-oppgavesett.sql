@@ -1,4 +1,3 @@
-
 /*
 	Oppgave 1
 */
@@ -89,6 +88,8 @@ FROM person
 WHERE EPost IS NOT NULL;
 
 SELECT * FROM mailtest;
+
+SELECT * FROM person;
 
 
 /*

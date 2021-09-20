@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+.bigText {
+    font-size: 32px;
+}
+
+div.smallText {
+    font-size: 10px;
+}
+
+div.redText {
+    color: red;
+}
+
+.blueText {
+    color: blue;
+}
+
+div > * {
+    background: red;
+    color: black;
+}

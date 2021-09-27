@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppvarming 2</title>
+</head>
+<body>
+    
+    <!-- Det er lov å endre HTML og id'er -->
+    <h3>Klikk på den du tror har en katt!</h3>
+    <img id="check-person1-img" src="images/person1.jpg" onclick="displayAnswer(1)">
+    <img id="check-person2-img" src="images/person2.jpg" onclick="displayAnswer(2)">
+    <div id="output-div"></div>
+
+    <script>
+      
+        const checkPersonImg1 = document.getElementById("check-person1-img");
+        const checkPersonImg2 = document.getElementById("check-person2-img");
+
+        const outputDiv = document.getElementById("output-div");
+
+        var correctAnswer;
+
+
+        function randomizeAnswer()
+        {
+            correctAnswer = getRandomNumber(2, 1);
+        }
+
+
+        function displayAnswer( answer ) 
+        {
+            var result;
+            var image;
+            
+            if (answer === correctAnswer)
+            {
+                result = "Det er riktig! Personen har en katt :>";
+                image = "cat.jpg";
+            } 
+            else 
+            {
+                result = "Det er feil! Personen har en frosk :o";
+                image = "frog.jpg";
+            }
+            
+
+            outputDiv.innerHTML = 
+            `
+                <h3>${result}</h3>
+                <img src="images/${image}"/>
+            `;
+
+            randomizeAnswer();
+        }
+
+        
+        
+        function getRandomNumber( max, startingNum = 0)
+        {
+            return Math.floor(Math.random() * max + startingNum);
+        }
+
+
+        function init()
+        {
+            randomizeAnswer();
+        }
+
+        init();
+
+    </script>
+
+</body>
+</html>

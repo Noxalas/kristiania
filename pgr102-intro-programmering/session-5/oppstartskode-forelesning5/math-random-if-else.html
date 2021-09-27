@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilfeldigheter</title>
+    <!--
+        Kode med Math.random for å skape tilfeldig tall
+        Math.floor for å lage heltall
+        if else som sjekker hva tallet er blitt og skriver ut noe
+        funksjon kalles på for å få det til å skje
+        modularisering av funksjonalitet: skape tall, sette beskjed, vise beskjed, funksjon som setter alt i gang
+    -->
+</head>
+<body>
+
+    <h3>Hva får du idag?</h3>
+    <div id="output-div"></div>
+
+    <script>
+
+        const outputDiv = document.getElementById("output-div");
+
+        var message;
+        var randNumber;
+
+        function getRandomNumber( max, startingNum = 0 )
+        {
+            return Math.floor(Math.random() * max + startingNum);
+        }
+
+
+        function setMessage() 
+        {
+            var image;
+
+            if(randNumber < 50)
+            {
+                image = "fem-hundre-kroner.png";
+            }
+            else 
+            {
+                image = "cat.jpg";
+            }
+            
+            message = `
+                <h3>${image}</h3>
+                <img src="images/${image}">
+            `;   
+
+        }
+
+
+        function showMessage()
+        {
+            outputDiv.innerHTML = message;
+        }
+
+
+        function init()
+        {
+            randNumber = getRandomNumber(100);
+            
+            setMessage();
+            showMessage();
+        }
+
+
+        init();
+
+
+    </script>
+    
+</body>
+</html>

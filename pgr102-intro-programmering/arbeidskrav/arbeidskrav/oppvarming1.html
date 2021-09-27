@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppvarming 1</title>
+</head>
+<body>
+    
+    <!-- Det er lov å endre HTML og id'er -->
+    <input id="add-images-btn" type="button" value="Legg til bilder" onclick="addPersons(getRandomNumber(100), randomCheck.checked)">
+    <p>Tilfeldige personer: <input id="randomize-checkbox" type="checkbox" value="test"></p>
+    <p>Antall bilder: <span id="total-image-span">0</span></p>
+    <div id="output-div"></div>
+
+    <script>
+
+        const addImageBtn = document.getElementById("add-image-btn");
+        const randomCheck = document.getElementById("randomize-checkbox");
+        const totalImageSpan = document.getElementById("total-image-span");
+        const outputDiv = document.getElementById("output-div");
+
+
+        function getRandomNumber( max, startNum = 0 )
+        {
+            return Math.floor(Math.random() * max + startNum);
+        } 
+
+
+        function addPersons( amount, random = false )
+        {
+            var num = 1;
+            
+            clearPersons();
+            
+            for(i = 0; i < amount; i++)
+            {
+                if(random){num = getRandomNumber(4 , 1)}
+                
+                outputDiv.innerHTML += `<img src="images/person${num}.jpg" />`;
+            }
+
+            totalImageSpan.innerHTML = `${amount}`;
+        }
+
+
+        function clearPersons()
+        {
+            outputDiv.innerHTML = "";
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

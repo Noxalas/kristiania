@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bygg en vikinghær</title>
+    <style>
+        body{font-family: sans-serif;}
+        img{height: 100px;}
+    </style>
+    <!--
+        Har en tekstboks som bruker kan angi hvilken type kriger brukeren ønsker og antallet
+        Bruker klikker på knapp
+        for-løkke som skriver ut antallet av den typen kriger bruker ønsker        
+    -->
+</head>
+<body>
+
+    <h3>Bygg din vikinghær</h3>
+    <label>Hvilken type kriger ønsker du?</label>
+
+    <select name="" id="warrior-select">
+        <option value="warrior-1.jpg">Valkyrie</option>
+        <option value="warrior-2.jpg">Garen</option>
+        <option value="warrior-5.jpg">Huskar</option>
+        <option value="warrior-6.jpg">Udyr</option>
+    </select>
+    <label>Hvor mange ønsker du?</label>
+        <input id="warrior-number-input" type="number" min="0" max="1000">
+        <br>
+    <input id="create-army-btn" type="button" value="Lag hær">
+    
+    <div id="output-div"></div>
+    
+    <script>   
+
+        const warriorSelect = document.getElementById("warrior-select");
+        const warriorNumInput = document.getElementById("warrior-number-input");
+        const createArmyBtn = document.getElementById("create-army-btn");
+
+        const outputDiv = document.getElementById("output-div");
+
+        var image;
+        var amount;
+
+        function createArmy() 
+        {
+            getUserInput();
+
+            for(i = 0; i < amount; i++)
+            {
+                outputDiv.innerHTML += `<img src="images/${image}">`;
+            }
+        }
+
+        function getUserInput() 
+        {
+            image = warriorSelect.value;
+            amount = warriorNumInput.value;
+        }
+
+
+        createArmyBtn.onclick = createArmy;
+
+    </script>
+
+</body>
+</html>

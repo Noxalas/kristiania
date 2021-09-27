@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
+            "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
+            "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
             "mode": "preview"
           }
         },
@@ -67,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
+                "file": "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,6 +94,8 @@
   },
   "active": "7eec9391553051a4",
   "lastOpenFiles": [
+    "1. Projects/R1-Matte Eksamen/1-Algebra/1-Algebra.md",
+    "1. Projects/R1-Matte Eksamen/Math Exam.md",
     "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/S4K3 - Math.random && for.md",
     "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/Oppgaver/PGR102.session(4) - Loops-bool-Math.random().md",
     "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/Task Images/clip_image002.jpg",
@@ -101,8 +103,6 @@
     "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/Session3-HTML & CSS.md",
     "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/PRO105-Session 3.md",
     "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/S3K1 - If-Else.md",
-    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/S3K2 - Function.md",
-    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/PGR102.session(3).md",
-    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/Oppgaver/PGR102.session(3) - Function-Event.md"
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 3/S3K2 - Function.md"
   ]
 }

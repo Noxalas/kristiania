@@ -1,0 +1,16 @@
+body > * {
+    background-color: grey;
+    width: 200px;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+body > *:nth-child(1) {
+    border: 6px dotted red;
+}
+body > *:nth-child(2) {
+    border: 6px solid blue;
+}
+body > *:nth-child(3) {
+    border: 6px double magenta;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+Oppgaver
+    [x] Lag en rød ramme som fyller ut hele nettleseren
+    [x] Plasser et bilde inne i den røde rammen.
+    [x] Legg en tekst over midten av bildet
+
+    Ekstra vanskelig
+    [x] Gjør samme oppgave uten å bruke absolutt posisjonering
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgaver Kosetid 1</title>
+    <style type="text/css">
+
+        body {
+            margin: 0;
+        }
+
+        #viewport-border-div {
+            position: absolute;
+            inset: 0 0 0 0; /*Det samme som top right bottom left! :D*/
+            border: 2px solid red;
+        }
+
+        #image-holder-div {
+            position: relative;
+        }
+
+        #moff-img {
+            width: 100%
+        }
+
+        #moff-p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-family: sans-serif;
+            font-size: 2rem;
+            color: white;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="viewport-border-div">
+        <div id="image-holder-div">
+            <img id="moff-img" src="../images/moff.png" alt=""/>
+            <p id="moff-p">poofy radiance</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-#Scripting #CSS #HTML 
+#Scripting #HTML 
 
 Introduksjon til #CSS 
 ===============
@@ -7,7 +7,7 @@ For å løse oppgavene må du laste ned tilhørende kodebase som er lagt ut på 
 
 **Før du begynner:** 
 
-- Last ned å pakk ut zip-filen.
+- Last ned og pakk ut zip-filen.
 
 - Åpne mappen som du har pakket ut i VS Code.
 
@@ -20,7 +20,7 @@ Da er du klar! Lykke til!
 Oppgaver
 -----------
 
-Begynn å skrive i style.css dokumentet. Hvis du er usikker på hvilke CSS-regler du skal bruke, kan det være lurt å se i slidene til forelesningen eller i listen nederst i dette dokumentet. Hvis du har index.html åpen i Live Server, vil du også se endringene underveis. 
+Begynn å skrive i style.css dokumentet. Hvis du er usikker på hvilke CSS-regler du skal bruke, kan det være lurt å se i slidene til forelesningen eller i listen nederst i dette dokumentet. Hvis du har index.html åpen i Live Server, vil du også se endringene underveis.  
 
 1. Bodyelementet (body) skal ha bakgrunnsfargen lightgray
 

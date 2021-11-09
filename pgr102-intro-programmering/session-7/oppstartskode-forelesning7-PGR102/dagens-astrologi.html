@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagens astrologi</title>
+    <!--
+        Dagens astrologi
+        - Et array inneholder forskjellige forutsigelser om hva som skal skje i dag.
+        - Et tilfeldig tall opprettes og en tilfeldig forutsigelse fra arrayet vises.
+        - Noen av forutsigelsene kan være et bilde
+    -->
+
+</head>
+<body>
+
+    <h1>Dagens astrologi</h1>
+    <input id="show-fate-btn" type="button" value="Vis skjebne">
+    <div id="output-div"></div>
+    
+    <script>
+
+        // HTML objects
+        const fateBtn = document.getElementById("show-fate-btn");
+        const outputDiv = document.getElementById("output-div");
+
+        // Variables
+        var randomIndex;
+        var fateArray = [
+            "Universet er med deg i dag!",
+            "Universet er ikke med deg i dag!",
+            "Du skal møte din ekte kjærleik idag!",
+            "dresses.jpg",
+            "prison.jpg",
+            "Du er død! :o",
+            "Du bør kjøpe en katt idag!"
+        ];
+
+        // Functions
+        function setRandomIndex() {
+            randomIndex = getRandomNumber(fateArray.length);
+        }
+
+
+        function displayFate() {
+            setRandomIndex();
+
+            if(fateArray[randomIndex].includes(".jpg")){
+                outputDiv.innerHTML = `<img src="images/${fateArray[randomIndex]}" />`;
+            } else {
+                outputDiv.innerHTML = fateArray[randomIndex];
+            }
+
+        }
+    
+
+        function getRandomNumber( max, startingNum = 0 ) {
+            return Math.floor( Math.random() * max + startingNum );
+        }
+
+        // Events
+        fateBtn.onclick = displayFate;
+        
+    </script>
+
+</body>
+</html>

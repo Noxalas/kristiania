@@ -1,6 +1,9 @@
 {
   "promptDelete": false,
-  "foldHeading": false,
+  "foldHeading": true,
   "showLineNumber": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "Files",
+  "foldIndent": true
 }

@@ -1,0 +1,1 @@
+Imagine a ceramic sphere that breaks in thin single layers. Could be cool concept for enemy.

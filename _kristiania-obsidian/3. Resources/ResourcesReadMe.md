@@ -1,5 +1,5 @@
-Resources
-========
+# Resources
+
 
 A **resource** is “a topic or theme of ongoing interest.”
 

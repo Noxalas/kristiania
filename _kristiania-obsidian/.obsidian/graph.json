@@ -1,10 +1,10 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": true,
-  "showOrphans": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
@@ -20,9 +20,16 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "path:\"1. Projects/Kafestrig\"",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0.4,
   "nodeSizeMultiplier": 1.1185393258427,
@@ -32,6 +39,6 @@
   "repelStrength": 9.43820224719101,
   "linkStrength": 0.876404494382023,
   "linkDistance": 196,
-  "scale": 1.1317839123989042,
+  "scale": 1.131783912398933,
   "close": true
 }

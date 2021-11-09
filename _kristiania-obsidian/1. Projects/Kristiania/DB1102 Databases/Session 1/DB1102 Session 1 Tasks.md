@@ -1,7 +1,7 @@
 #DB1102 #Scripting #SQL
 
-DB1102 Session 1 Tasks
-=================
+# DB1102 Session 1 Tasks
+
 --------------------------------------
 
 ```sql

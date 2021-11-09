@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "path:kafestrig",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Projects",
+      "color": {
+        "a": 1,
+        "rgb": 5431420
+      }
+    },
+    {
+      "query": "path:Areas",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Resources",
+      "color": {
+        "a": 1,
+        "rgb": 14701188
+      }
+    },
+    {
+      "query": "path:Archives",
+      "color": {
+        "a": 1,
+        "rgb": 10048224
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0.4,
+  "nodeSizeMultiplier": 1.1185393258427,
+  "lineSizeMultiplier": 1.86179775280899,
+  "collapse-forces": true,
+  "centerStrength": 0.50561797752809,
+  "repelStrength": 9.43820224719101,
+  "linkStrength": 0.876404494382023,
+  "linkDistance": 196,
+  "scale": 1.0860267840609734,
+  "close": true
+}

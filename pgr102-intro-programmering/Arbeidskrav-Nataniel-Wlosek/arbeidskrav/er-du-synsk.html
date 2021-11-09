@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="denne-mappen-trengs-ikke-roeres/er-du-synsk.css">
+    <title>Er du synsk?</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Er du synsk?</h1>
+    </header>
+    
+    <main id="game-main">
+    
+        <!-- Det er lov å endre HTML og id'er -->
+        <section>
+            <div id="box1-div">Denne?</div>
+            <div id="box2-div">Eller denne?</div>
+        </section>
+    
+        <div id="health-display-div"></div>
+    
+        <div id="number-of-right-answers-div">
+            <p>Antall riktige: 0</p>
+        </div>
+    
+        <div id="number-of-wrong-answers-div">
+            <p>Antall feil: 0</p>
+        </div>    
+    
+        <div id="output-div">
+            <p>Klikk på en av boksene for å begynne spillet</p>            
+        </div>
+
+    </main>
+    
+
+    <script>
+        
+        //HTML-objekter
+        const answerBoxes = [
+            document.getElementById("box1-div"), 
+            document.getElementById("box2-div")
+        ];
+
+        const gameMain = document.getElementById("game-main");
+        const healthDisplayDiv = document.getElementById("health-display-div");
+        const totalRightDiv = document.getElementById("number-of-right-answers-div");
+        const totalWrongDiv = document.getElementById("number-of-wrong-answers-div");
+        const outputDiv = document.getElementById("output-div");
+
+        // Variabler
+        var health;
+
+        var rightAnswer;
+
+        var totalRight = 0;
+        var totalWrong = 0;
+
+        // Funksjoner
+
+        function checkAnswer( btnId ) {
+            if (rightAnswer === btnId) {
+                totalRight++;
+
+                updateHTML(totalRightDiv, `<p>Antall riktige: ${totalRight}</p>`);
+                updateHTML(outputDiv, `Riktig svar!`);
+
+                checkHealMilestone([3, 5, 7]);
+                
+            } else {
+                totalWrong++;
+
+                updateHTML(totalWrongDiv, `<p>Antall feil: ${totalWrong}</p>`);
+                updateHTML(outputDiv, `Feil svar..`);
+                
+                health--;
+            }
+
+            updateHealthDisplay(health);
+
+            checkWinCondition();
+            randomizeAnswer();
+
+        }
+
+        function checkHealMilestone( milestones = [] ) {
+            milestones.forEach(milestone => {
+                if (totalRight === milestone) {
+                    health++;
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        }
+
+        function checkWinCondition() {
+            if (totalRight >= 10) {
+                clearHTML(gameMain);
+
+                updateHTML(gameMain, `
+                <h3>Gratulerer! Du vant spillet! :></h3>
+                <img src="images/fireworks.jpg" /><br>
+                <input type="button" value="Prøve igjen?" onclick="location.reload()">
+                `)
+
+                console.log("Winner winner chicken dinner");
+            } 
+            
+            if (health <= 0) {
+                clearHTML(gameMain);
+
+                updateHTML(gameMain, `
+                <h3>Det var nesten! Prøve igjen? :></h3>
+                <img src="images/cat.jpg" /><br>
+                <input type="button" value="Prøv igjen" onclick="location.reload()">
+                `)
+            }
+        }
+
+        function updateHealthDisplay( value ) {
+            clearHTML(healthDisplayDiv);
+            console.log("updating health...")
+            for (i = 0; i < value; i++) {
+                healthDisplayDiv.innerHTML += `<img src="images/person1.jpg" />`;
+            }
+        }
+
+        function updateHTML( el, text ) {
+            el.innerHTML = text;
+        }
+
+        function clearHTML( el ) {
+            el.innerHTML = "";
+        }
+
+        function randomizeAnswer() {
+            rightAnswer = getRandomNumber(2, 1);
+        }
+
+        function getRandomNumber( max, startingNum = 0 ) {
+            return Math.floor(Math.random() * max + startingNum);
+        }
+
+        function init() {
+            var userInput = window.prompt("Hvor mange liv vil du starte med?");
+
+            if (userInput) {
+                if (!isNaN(userInput)) {
+                    health = userInput;
+                } else {
+                    health = 5;
+                }
+            } else {
+                health = 5;
+            }
+
+            randomizeAnswer();
+            updateHealthDisplay(health);
+        }
+
+        init();
+
+        // Events
+
+        answerBoxes[0].onclick = function() {
+            checkAnswer(1);
+        }
+        answerBoxes[1].onclick = function() {
+            checkAnswer(2);
+        }
+
+    </script>
+
+
+</body>
+</html>

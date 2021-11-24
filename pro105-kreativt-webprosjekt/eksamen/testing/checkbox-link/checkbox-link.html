@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Checkbox Link</title>
+
+    <style>
+        a {
+            display: none;
+        }
+
+        /* Gjemmer checkboxen så den ikke kan bli trykket på flere ganger */
+        .checkbox-link:checked 
+        {
+            display: none;
+        }
+
+        /* Selektor for alle <a> tager som ligger under checkboxen */
+        .checkbox-link:checked ~ a {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <input type="checkbox" name="" class="checkbox-link">
+    <a href="">Link</a>
+    <a href="">Link</a>
+
+</body>
+</html>

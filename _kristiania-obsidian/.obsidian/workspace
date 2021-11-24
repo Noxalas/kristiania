@@ -9,7 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< Updated upstream
             "file": "Zettelkasten/A simple question.md",
+=======
+            "file": "1. Projects/Kristiania/PRO105 Creative Web Project/Tillatt HTML & CSS.md",
+>>>>>>> Stashed changes
             "mode": "source"
           }
         }
@@ -68,7 +72,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Zettelkasten/A simple question.md",
+=======
+                "file": "1. Projects/Kristiania/PRO105 Creative Web Project/Tillatt HTML & CSS.md",
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +107,7 @@
   },
   "active": "6bc49e09d04b2ce3",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "Zettelkasten/A simple question.md",
     "Zettelkasten/Who is your creature.md",
     "Zettelkasten/What will make your creature memorable.md",
@@ -109,5 +118,17 @@
     "1. Projects/Kafestrig/Actor.md",
     "1. Projects/Kafestrig/Kafestrig.md",
     "2. Areas/Scripting/HTML/HTML.md"
+=======
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Tillatt HTML & CSS.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/PRO105 Exam.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/PRO105 Teknisk løsning.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Teknisk løsning.md",
+    "1. Projects/Kristiania/PRO105 Creative Web Project/Session 3/Session3-HTML & CSS.md",
+    "1. Projects/Kristiania/PGR102 Intro Programming/Session 4/Oppgaver/PGR102.session(4) - Loops-bool-Math.random().md",
+    "1. Projects/R1-Matte Eksamen/5-Vektorer/5.5 Vektorer på koordinatform.md",
+    "1. Projects/R1-Matte Eksamen/5-Vektorer/5.0 Vektorer.md",
+    "1. Projects/R1-Matte Eksamen/Math MOC.md",
+    "1. Projects/R1-Matte Eksamen/7-Funksjonslære/7.8 Drøfting av funksjoner med delt funksjonsuttrykk.md"
+>>>>>>> Stashed changes
   ]
 }

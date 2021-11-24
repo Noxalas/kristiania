@@ -27,6 +27,13 @@
         "a": 1,
         "rgb": 11657298
       }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
     }
   ],
   "collapse-display": false,
@@ -39,6 +46,6 @@
   "repelStrength": 9.43820224719101,
   "linkStrength": 0.876404494382023,
   "linkDistance": 196,
-  "scale": 1.131783912398933,
-  "close": true
+  "scale": 0.8072736937049925,
+  "close": false
 }

@@ -3,7 +3,8 @@
   "foldHeading": true,
   "showLineNumber": false,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current",
+  "newFileLocation": "folder",
   "attachmentFolderPath": "Files",
-  "foldIndent": true
+  "foldIndent": true,
+  "newFileFolderPath": "Zettelkasten"
 }

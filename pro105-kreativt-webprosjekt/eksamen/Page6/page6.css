@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+
+    background-color: #dff6f5;
+}
+
+@keyframes pointArrow {
+    0% {transform: translate(-8px);}
+    100% {transform: translateX(8px);}
+}
+
+#level-exit {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+
+    display: none;
+
+    animation: pointArrow .5s infinite alternate;
+}
+
+/* General character class, used for all characters */
+.character {
+    position: absolute;
+    display: none;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+/* Initial starting position for protagonist */
+.startPosition {
+    top: 54.4%;
+    left: 25%;
+}
+
+/* Initialize all interactables */
+.interactable {
+    position: absolute;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+}
+
+/* Checkbox styling */
+.checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#showInterior {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+#showInterior:checked {
+    display: none;
+}
+
+#showInterior:checked + #trainExterior {
+    opacity: 0;
+}
+
+#train {
+    position: absolute;
+    top: 32%;
+}
+
+#trainInterior {
+    position: absolute;
+    z-index: -1;
+}
+
+#trainExterior {
+    transition: opacity 1s;
+}
+
+/* div and checkbox positioning */
+.coalCart {
+    position: absolute;
+    top: 35%;
+    left: 22.5%;
+
+    width: 370px;
+    height: 81px;
+}
+
+/* alex positioning for the coal cart */
+.coalCart + .character {
+    top: 27.5%;
+    left: 35%
+}
+
+/* div and checkbox positioning */
+.furnace {
+    display: none;
+    top: 46%;
+    left: 52%;
+
+    width: 78px;
+    height: 60px;
+}
+
+/* alex positioning for furnace */
+.furnace + .character {
+    top: 38%;
+    left: 45%;
+}
+
+.checkbox:checked {
+    display: none;
+}
+
+.coalCart:checked ~ .furnace {
+    display: block;
+}
+
+.coalCart:checked ~ .furnace:checked {
+    display: none;
+}
+
+.furnace:checked ~ a#level-exit {
+    display: block;
+}
+
+/* Character with a start position is visible */
+.character.startPosition {display: block;}
+
+/* Display the character(s) inside interactable element on hover */
+.interactable:hover + .character {display: block;}
+
+/* Hide character(s) with start position on hover */
+.interactable:hover ~ .character.startPosition {display: none;}

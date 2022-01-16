@@ -7,19 +7,10 @@
         "id": "a43a78a2575c56f0",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
-        }
-      },
-      {
-        "id": "acc70b4642bb5dc7",
-        "type": "leaf",
-        "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Projects/Kafestrig/World Map.md",
-            "mode": "source",
-            "source": true
+            "file": "1. Projects/Kafestrig/Projectile.md",
+            "mode": "source"
           }
         }
       }
@@ -77,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Projects/Kafestrig/World Map.md",
+                "file": "1. Projects/Kafestrig/Projectile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,28 +89,20 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "3aa99862b64f24de",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "acc70b4642bb5dc7",
+  "active": "a43a78a2575c56f0",
   "lastOpenFiles": [
+    "1. Projects/Kafestrig/Projectile.md",
     "1. Projects/Kafestrig/World Map.md",
     "1. Projects/Kafestrig/Systems.md",
     "1. Projects/Kafestrig/Projectile Emitters.md",
-    "1. Projects/Kafestrig/Projectile.md",
     "1. Projects/Kafestrig/Projectile Motions.md",
     "1. Projects/Kafestrig/Modular Weapons.md",
     "1. Projects/Kafestrig/Projectile Emitter Configuration.md",

@@ -1,0 +1,88 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+#icecreamBooth {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    background-color: darksalmon;
+    width: 200px;
+    height: 150px;
+
+}
+
+#photoBooth {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    background-color: darkseagreen;
+    width: 200px;
+    height: 150px;
+}
+
+#spaceCoaster {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    background-color: indianred;
+    width: 150px;
+    height: 300px;
+}
+#legoAlex {
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    background-color: red;
+    width: 50px;
+    height: 70px;
+}
+#legoEivind {
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    background-color: blue;
+    width: 50px;
+    height: 70px;
+}
+#legoAlexIcecream {
+    position: absolute;
+    left: 20%;
+    top: 53%;
+    background-color: red;
+    width: 50px;
+    height: 70px;
+    
+}
+#legoEivindIcecream {
+    position: absolute;
+    left: 60%;
+    top: 53%;
+    background-color: blue;
+    width: 50px;
+    height: 70px;
+
+}
+#icecreamCharacters{
+    height: 150px;
+    width: 200px;
+}
+
+#icecreamCharacters > div{
+    display: none;
+}
+
+#icecreamBooth:hover ~ #legoCharacters{
+    display: none;
+    /*
+    animation-name: fadeCharacters;
+    animation-duration: 0.0001ms;
+    animation-fill-mode: forwards;
+    */
+}
+
+#icecreamCharacters:hover > *{
+    display: block;
+}

@@ -3,8 +3,11 @@
   "foldHeading": true,
   "showLineNumber": false,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "attachmentFolderPath": "Files",
   "foldIndent": true,
-  "newFileFolderPath": "Zettelkasten"
+  "newFileFolderPath": "Zettelkasten",
+  "legacyEditor": false,
+  "livePreview": false,
+  "autoPairMarkdown": true
 }

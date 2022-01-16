@@ -9,7 +9,7 @@ Inspired by LDtk, this editor also takes advantage of a [[World view]] with indi
 
 Using the [[Universal Layering]] I can have a simple way to create functionally and aesthetically sound screens.
 
-The level editor has all the [[Hotkeys]] you would need for an efficient workflow.
+The level editor has all the [[Solanum Editor Hotkeys]] you would need for an efficient workflow.
 
 ## References
 1. 

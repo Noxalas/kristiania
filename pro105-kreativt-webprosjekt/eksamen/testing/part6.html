@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 6</title>
+
+
+    <!-- TODO: Make external stylesheet after initial testing -->
+    <style>
+        /* General character class, used for all characters */
+        .character {
+            position: absolute;
+            display: none;
+
+            background-color: red;
+            height: 48px;
+            width: 48px;
+
+        }
+
+        /* Initial starting position for protagonist */
+        .startPosition {
+            top: 60%;
+            left: 10%;
+        }
+
+        /* Initialize all interactables */
+        .interactable {
+            position: absolute;
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+        }
+
+
+
+        /* Checkbox styling */
+        .interactable input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Selector for character inside interactable element */
+        input:checked + .character{
+            border: 10px solid red; 
+        }
+
+        #pull-cord {
+            top: 40%;
+            left: 35%;
+
+            width: 50px;
+        }
+
+        /* Fix pull cord selection */
+        #pull-cord input {z-index: 1;}
+
+        #panel {
+            top: 40%;
+            left: 65%;
+        }
+
+        /* Character with a start position is visible */
+        .character.startPosition {display: block;}
+
+        /* Display the character(s) inside interactable element on hover */
+        .interactable:hover .character {display: block;}
+
+        /* Hide character(s) with start position on hover */
+        .interactable:hover ~ .character.startPosition {display: none;}
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+        
+        <div class="interactableObjects">
+            <div id="pull-cord" class="interactable">
+                <input type="checkbox" name="">
+                <div class="character"></div>
+            </div>
+            <a href="part7.html" id="panel" class="interactable">
+                <div class="character"></div>
+            </a>
+            <div class="character startPosition"></div>
+        </div>
+            
+
+    </main>
+
+</body>
+</html>

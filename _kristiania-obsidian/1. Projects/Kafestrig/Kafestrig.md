@@ -9,3 +9,4 @@ Inspired by the concept of Moonlighter.
 ## Map of Contents:
 - [[Systems]]
 - [[Gameplay]]
+- [[World of Iridium]]

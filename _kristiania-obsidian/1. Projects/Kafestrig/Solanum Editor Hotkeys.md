@@ -1,4 +1,4 @@
-# Hotkeys
+# Editor Hotkeys
 Created: 2021-10-25 16:37
 Type: #type/gamedev
 Status: #status/todo 

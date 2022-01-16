@@ -1,12 +1,19 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "path:\"1. Projects/Kafestrig\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
+    {
+      "query": "path:\"1. Projects/Kafestrig\"",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
     {
       "query": "tag:#Unity",
       "color": {
@@ -15,24 +22,31 @@
       }
     },
     {
-      "query": "path:\"1. Projects/Kristiania\"",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "path:\"1. Projects/Kafestrig\"",
+      "query": "path:\"1. Projects\"",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "",
+      "query": "path:\"2. Areas\"",
       "color": {
         "a": 1,
         "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"3. Resources\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:\"4. Archives\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
       }
     }
   ],
@@ -46,6 +60,6 @@
   "repelStrength": 9.43820224719101,
   "linkStrength": 0.876404494382023,
   "linkDistance": 196,
-  "scale": 0.8072736937049925,
-  "close": false
+  "scale": 1.0997193094022377,
+  "close": true
 }

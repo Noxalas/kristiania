@@ -1,6 +1,9 @@
 {
-  "baseFontSize": 13,
+  "baseFontSize": 24,
   "theme": "obsidian",
   "translucency": false,
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "obsidian-minimal-tweaks"
+  ]
 }
